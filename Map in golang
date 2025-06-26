@@ -23,7 +23,7 @@ func main() {
 	delete(studentGrades, "Ayush")
 	fmt.Println(studentGrades)
 
-	//check exisis or naot
+	//check exisis or not
 
 	//it return two val firest value and second true of false
 	grades, exisist := studentGrades["bob"]
