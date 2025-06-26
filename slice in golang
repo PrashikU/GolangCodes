@@ -1,1 +1,40 @@
+package main
+import ("fmt")
+
+func main() {
+  arr1 := []int{10, 11, 12, 13, 14,15}
+  myslice := arr1[2:4]
+
+  fmt.Printf("myslice = %v\n", myslice)
+  fmt.Printf("length = %d\n", len(myslice))
+  fmt.Printf("capacity = %d\n", cap(myslice))
+}
+
+
+
+//using make func
+
+package main
+
+import "fmt"
+
+func main() {
+
+	slice := make([]int, 3, 5)
+
+	slice = append(slice, 1)
+	slice = append(slice, 2)
+	slice = append(slice, 3)
+	slice = append(slice, 4)
+	slice = append(slice, 5)
+	slice = append(slice, 6)
+
+	fmt.Println("slice is:- ", slice)
+	fmt.Println("length is:- ", len(slice))
+	fmt.Println("cap is:- ", cap(slice))
+	fmt.Println(slice[1:4])
+
+}
+
+
 
