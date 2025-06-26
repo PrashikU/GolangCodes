@@ -1,0 +1,44 @@
+package main
+
+import "fmt"
+
+func main() {
+	//Method 1
+	studentGrades := make(map[string]int)
+
+	studentGrades["prashik"] = 95
+	studentGrades["Ayush"] = 92
+	studentGrades["omkar"] = 30
+	studentGrades["Rohan"] = 90
+	studentGrades["Divya"] = 50
+
+	fmt.Println("marks of Ayush:-", studentGrades["Ayush"])
+
+	//update
+	studentGrades["omkar"] = 10
+
+	fmt.Println("marks of Ayush:-", studentGrades["omkar"])
+
+	//Delete
+	delete(studentGrades, "Ayush")
+	fmt.Println(studentGrades)
+
+	//check exisis or naot
+
+	//it return two val firest value and second true of false
+	grades, exisist := studentGrades["bob"]
+
+	fmt.Println("grades of bob", grades)
+	fmt.Println("bob is exisist", exisist)
+
+	//Method 2
+
+	person := map[string]int{
+
+		"ram":    100,
+		"rohit":  98,
+		"Pratik": 89,
+	}
+
+	fmt.Println(person)
+}
