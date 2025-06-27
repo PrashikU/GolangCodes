@@ -19,3 +19,26 @@ func main() {
 
 outputs:- [apple banala orange]
           [apple banala orange]
+
+
+
+
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+
+	str := "one,two,three,three,four"
+
+	count := strings.Count(str, "three")
+
+	fmt.Println("count is:-", count)
+
+
+	
+
+}
