@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	data := "apple,banala,orange"
+	data2 := "apple.banala.orange"
+
+	part := strings.Split(data, ",")
+	part2 := strings.Split(data2, ".")
+	fmt.Println(part)
+	fmt.Println(part2)
+
+}
+
+
+outputs:- [apple banala orange]
+          [apple banala orange]
